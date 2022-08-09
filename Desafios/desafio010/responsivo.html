@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        main{
+            background-color: white;
+            padding:20px;
+            border-radius:10px;
+            min-width: 320px;/*essa é a largura média de celulares*/
+            max-width:800px;/*tamanho máximo que ele ocupa, mesmo na tela grande é esse*/
+            margin:auto;
+        }
+        img{
+            width:100%;/*já aumenta e diminui a img de acordo com o tamanho da tela*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias tempora molestiae numquam aspernatur quibusdam incidunt non sit reprehenderit! Ratione quos unde eligendi culpa obcaecati. Enim excepturi aliquam hic molestiae iste Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ex tenetur dicta? Eius voluptatem dolorem velit assumenda voluptatibus dolor rerum, excepturi tempore! Quibusdam eum voluptatum veritatis! Obcaecati incidunt ipsa sapiente!</p>
+        <picture>
+            <source media="(max-width:600px )" srcset="pacote-projeto-d010/imagens/irina-blok-pq.jpg" type="image/jpg">
+            <img src="pacote-projeto-d010/imagens/irina-blok.jpg" alt="irina"></picture>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis facere laboriosam suscipit blanditiis vitae, tenetur eum maiores pariatur dolorum sunt unde amet eligendi ab veritatis sed debitis, repellendus est nam?Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptate. Maiores, laboriosam nesciunt eligendi quasi velit qui explicabo consequatur fugit, omnis, laudantium non illum autem? Consequuntur ducimus quisquam deserunt deleniti.</p>
+    </main>
+</body>
+</html>

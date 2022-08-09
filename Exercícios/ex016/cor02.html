@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * {/*configurações globais da CSS(nesse caso para funcionar o degrade to top)*/
+            height: 100%;
+        }
+        body{
+            background-image:linear-gradient(to top, #63D5EC,#169AB5, #2C5E69); /*Direção para direita(to left p esquerda, to top de baixo para cima, to bottom de cima p baixo), começa em uma cor e termina em outra(selecionadas em uma paleta do adobe colors // pode colocar qts quiser) // tbm posso substituir linear-gradient por radial e em vez de sentido/graus(ex. -45deg) bota circle // tb posso botar uma % depois de cada cor para indicar quanto eu quero que ela ocupe*/
+            background-attachment: fixed;/*para o degrade ficar fixo mesmo se eu rolar a pág para baixo*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradiente</h1>
+    
+</body>
+</html>

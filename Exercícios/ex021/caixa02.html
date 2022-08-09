@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color:lightpink;
+            font-family: Arial, Helvetica, sans-serif;
+            margin:0px;
+        }
+        header{
+            background-color:white;
+            padding:10px;
+            margin:10px;
+        }
+        main{
+            background-color: white;
+            padding:10px;
+            margin:10px;
+            border-radius:5px;/*raio da borda // arredonda as bordas da cx de txt // tbm segue a ordem top, right,bottom, left caso vc queira tamanhso diferentes em cada extremidade;*/
+        }
+        footer{
+            background-color: lightcoral;
+            color:white;
+            text-align: center;
+            margin:0px;/*igual a do body para ficar colado na extremidade*/
+            padding: 4px;/*alterei aqui*/
+            
+        }
+        article{
+            background-color: rgb(253, 228, 231);
+            padding:5px;
+        }
+        article > aside{
+            background-color:rgb(255, 198, 207) ;
+        }
+        nav{
+            background-color: rgb(255, 198, 207);
+            padding:3px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.504);/*deslocamento horizontal, vertical, espalhamento, sombra // posso add 'inset' no inicio caso queira que a sombra fique dentro*/
+        }
+        nav > a{
+            text-decoration:none;/*tira o sublinhado do link*/
+            color:white;
+            margin-right: 60px;/*margem entre os links, deixa mais separados*/
+
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        footer > p{/*ele estava considerando o rodapé um parágrafo, para diminuir a 'borda' temos que tirar a margem dele, e manter só o padding*/
+            margin:0px;
+        }
+        div#bola{
+            height: 100px;
+            width:100px;
+            background-color: white;
+            border-radius: 50%;
+            margin:10px auto;/*afasta e centraliza*/
+        }
+    </style>
+</head>
+<body>
+    <!--div(pode ser usada para organizar um site, colocar uma dentro da outra etc, mas é melhor usando header, main, footer, que funcionam como divs, são divs semânticas)= box-level-->
+    <!--span= inline-level-->
+    <header><!--cabeçalho-->
+        <h1>Meu site</h1>
+        <nav><!--coloca links/menu-->
+        
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            
+        </nav>
+    </header>
+    <main><!--conteúdo principal-->
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="notícias">
+            <article><!--artigo-->
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, quibusdam illum nostrum eaque officia, praesentium qui eius suscipit soluta aliquam molestiae explicabo optio in eveniet reiciendis distinctio esse tempora quaerat.</p>
+                <aside><!--conteúdo periférico ao artigo-->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+    </main>
+    <footer><!--rodapé-->
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

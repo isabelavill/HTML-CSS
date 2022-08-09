@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1><!--numeração necessária-->
+    <h2>Listas Ordenadas</h2><!--listas em que a ordem faz diferença-->
+    <ol type="1" start="1"> <!--Oferece uma lista de tipos de ícones(Numeros, romanos, letras) // indica o inicio da listagem-->
+        <li>Acordar</li><!--O /li é opcional(tag de fechamento)-->
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovas os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas não ordenadas</h2><!--numerar não faz sentido-->
+    <ul type="disc"><!-- disc(bolinha fechada), cicle(bolinha aberta), square(quadradinho)-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+    </ul>
+    <h2>Juntando listas 1.0</h2>
+    <h3>Minhas linguagens favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+            <ol type="a" start="5">
+                <li>PHP</li>
+                <li>Phyton</li>
+                <li>Javascript</li>
+                <li>Kotlin</li>
+            </ol>
+    </ol>
+    <h3>Meus jogos favoritos</h3>
+    <ol>
+        <li>NES</li>
+        <ul> <!-- Macete para mudar tudo de uma vez, de ol para ul, clica onde vc quer apagar, segura alt, solta e altera-->
+            <li>Mario Bros</li>
+                <ul type="circle">
+                    <li>Mario 3</li>
+                    <li>Mario lost levels</li>
+                </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul>
+            <li>Mario Bros</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>Playstation</li>
+        <ul>
+            <li>Final Fantasy</li>
+            <li>Castle</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt><!--Termo-->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site. </dd><!--Descrição-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação para a criação de interatividade em um site.</dd>
+    </dl>
+</body>
+</html>
