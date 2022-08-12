@@ -51,19 +51,36 @@ section{
     font-family: var(--fonte3);
     font-size:3vw;
 }
+section > p{
+    padding-bottom: 2em; /*da um espaço entre as duas estrofes que estão no mesmo section*/
+}
 section.imagem{
     background-color: rgb(51, 51, 51);
     color:white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.561);/*pra dentro,6, 6, espalhamento, ampliação */
+    background-size: cover;
+    background-attachment: fixed;/*basta isso p fazer o efeito Parallax*/
 }
 section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.394);
+    background-color: rgba(0, 0, 0, 0.514);
     display:inline-block;
     padding:5px;
+    text-shadow:1px 1px 0px black ;
    
 }
 section.normal{
     background-color: white;
     color:black;
+}
+section#img01{
+    background-image:url('../imagens/background001.jpg') ;/*como vc esta na pasta estilo tem q "voltar" com ../ e selecionar a pasta e respectiva img*/
+    background-position: right center;
+    
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    
 }
 footer{
     background-color: black;
