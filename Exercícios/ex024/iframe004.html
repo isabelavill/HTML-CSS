@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+    <style>
+        iframe{
+            width:350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores at labore nulla porro illo tenetur aliquid aperiam laboriosam maxime veniam, commodi odit, aut voluptatum sapiente dolore quidem ipsa fugit quaerat!</p>
+
+    <iframe src="pag004.html" sandbox="sandbox" referrerpolicy="no-referrer"></iframe><!--sandbox=sandbox : bloqueia TODAS as ações potencialmente maliciosas, não captura mais nenhuma informação/ sandbox=allow-same-order allow-forms allow-scripts : permite os conteúdos de mesma origem, formulários e scripts(executados pelo html) //referrerpolicy=no-refer : o conteúdo que está carregado dentro do iframe não vai coletar nenhuma info do usuário -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt, ad iusto provident numquam error quibusdam quas aliquam beatae laudantium natus atque in sunt id at esse minima nesciunt magnam.
+    </p>
+
+    <iframe src="pag005.html" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
+</body>
+</html>
