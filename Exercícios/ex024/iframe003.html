@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width:95vw;
+            height: 400px;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fugit, nisi eum vero ab distinctio debitis. Inventore natus maxime corrupti consectetur ab molestias, architecto cupiditate nisi, aliquid ratione porro aperiam.</p>
+    <ul>
+        <li><a href="pagina001.html" target="frame">Primeira página</a></li><!--carregando o link dentro do iframe //  no target do link boto o name que eu add ao iframe-->
+        <li><a href="pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magnam eligendi eaque tempore velit odit repellat ullam. Voluptatem maxime, incidunt animi deleniti quae autem beatae nesciunt velit et illum rem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab veritatis facere, eaque aperiam mollitia sequi nam velit aspernatur saepe dicta exercitationem quos porro voluptatibus quae quod quis, veniam assumenda soluta.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p>dá pra colocar tag img aqui tb basta salvar alguma aqui na pasta </p> " ><!--troca src por srcdoc p poder botar html ali dentrp-->
+        <p>Infelizmente o seu navegador não é compatível com este iframe.</p>
+    </iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam laboriosam consequatur quaerat inventore libero dignissimos fugiat enim voluptates eius aut maxime dolorum at, illo facere unde voluptatum rerum debitis pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dignissimos nihil fuga laudantium quae voluptas, corporis praesentium corrupti. Ad ab inventore ipsam velit saepe magni tempora eligendi quis molestiae non.
+    </p>
+</body>
+</html>
