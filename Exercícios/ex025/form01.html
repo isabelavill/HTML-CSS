@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="post"><!--local para onde as infos são enviadas // desliga a sujestão de nomes nesse caso // method post n bota as infos na URL(continua desprotegido, so n aparece), get bota-->
+        <p><label for="inome"><!--aqui no for vc coloca o id // add sempre a label p fazer o ligamento entre a cx de texto e a palavra anterior('nome' e 'sobrenome' neste caso)-->Nome:</label> 
+        <input type="text" name="nome" id="inome"></p><!--name é util p linguagem php, id para javascript-->
+        <p><label for="isobrenome">Sobrenome: </label>
+        <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form><!--todo formulário tem q estar entre as tags form-->
+</body>
+</html>
