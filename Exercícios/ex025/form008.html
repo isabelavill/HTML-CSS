@@ -9,7 +9,18 @@
 <body>
     <h1>Exemplo de formulário</h1>
     <form action="" method="get" autocomplete="on">
-
+    <p>
+        <label for="in1">Número 1:</label>
+        <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"><!--oninput: quando eu entrar com dados, ele realiza determinada coisa, nesse caso, soma-->
+    </p>
+    <p>
+        <label for="in2">Número 2:</label>
+        <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+    </p>
+    <p>
+        <label for="isoma">Soma:</label>
+        <output id="isoma">0</output><!--output não serve p 'enviar' nada, só mostra as coisas na tela-->
+    </p>
 
     </form>
     <p>
