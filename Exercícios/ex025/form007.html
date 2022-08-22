@@ -7,6 +7,54 @@
     <title>Formulários</title>
 </head>
 <body>
-    <h1>Testando formulários</h1>
+    <h1>Exemplo de formulário</h1>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+           <label for="iest">Estado:</label> 
+           <select name="estado" id="iest"><!--criei select e suas options, depois envelopei os grupso de options de cada região em um optgroup e add um label(atributo, n elemento) pra ele-->
+
+            <optgroup label="Sudeste">
+                <option value="SP" selected>São Paulo</option><!--sp ja vem préselecionado-->
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Sul">
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC" >Santa Catarina</option>
+            </optgroup>
+           </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label><!--input de texto normal, abro a tag datalist, crio as options, adiciono 'list' no input com o id que eu botei em datalist, ele mostra quando clico na cx-->
+            <input type="text" name="prof" id="iprof" list="profissoes">
+            <datalist id="profissoes">
+                <option value="PROF">Professor</option>
+                <option value="ENF">Enefermeira</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea><!--cols numero de colunas, rows numero de linhas // quando usar essa tag o ideal é q o forma esteja method post-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
 </body>
 </html>
