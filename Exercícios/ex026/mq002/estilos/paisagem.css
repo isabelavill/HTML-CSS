@@ -1,3 +1,7 @@
 @charset "UTF-8";
 
 /*Para aparelhos deitados (landscape)*/
+body{
+    background-image:url(../imagens/cev-landscape.jpg);
+    background-position:left bottom;/*gruda no campo esquerdo e na parte de bx do site*/
+}

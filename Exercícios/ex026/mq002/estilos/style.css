@@ -1,3 +1,20 @@
 @charset "UTF-8";
 
 /*Configurações gerais*/
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    width:100vw;
+    height:100vh;
+    background-color: #233eff;/*cor do curso em video, mescla c o unfo da img*/
+    background-size: contain;/*fica melhor que cover pq usa a img inteira*/
+    background-repeat: no-repeat;
+}
+h1{
+    color:white;
+    text-shadow: 3px 3px 0px #1526a7;
+    padding:10px;
+}
