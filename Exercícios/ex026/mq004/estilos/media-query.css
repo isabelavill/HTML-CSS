@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias/*
+/*typical device break points: tamanhos de tela padrao(de pc, celular, tablets)/tenho que pesquisar e ver quais são os tamanhos atualizados pq o do cursoemvideo ja pode estar defasado.
+pequenas telas:até 600px;
+celular: de 600px até 768px; (não preciso fazer as configurações dele aqui pq nosso site ja foi contruido em mobile first)
+tablet:768-992px;
+desktop:992px-1200px;
+grandes telas(tv): acima de 1200px;
+*/
+
+@media print{
+    body{
+        background-image: url(../imagens/back-print.jpg);/*desnecessário pq n imprime*/
+    }
+    *{
+       font-family: 'Courier New', Courier, monospace;  
+    }
+    main{
+        border:2px solid black;
+    }
+    main h1{ 
+        text-shadow: none;
+        color:black;
+    }
+    img#phone{display:none;}
+    #tablet{display:none;}
+    #print{display:block;}
+    #pc{display:none;}
+    #tv{display:none;}
+}
+
+@media screen and (min-width: 768px) and (max-width:992px){/*tablet*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{display:none;}
+    #tablet{display:block;}
+    #print{display:none;}
+    #pc{display:none;}
+    #tv{display:none;}
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px){/*desktop*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{display:none;}
+    #tablet{display:none;}
+    #print{display:none;}
+    #pc{display:block;}
+    #tv{display:none;}
+}
+
+@media screen and (min-width:1200px){/*grandes telas*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{display:none;}
+    #tablet{display:none;}
+    #print{display:none;}
+    #pc{display:none;}
+    #tv{display:block;}
+
+}
