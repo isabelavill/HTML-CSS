@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body,html{
+    background-color: lightgray;
+}
+main{
+    background-color: white;
+    padding:10px;
+    border-radius: 20px;
+}
